@@ -1,0 +1,46 @@
+﻿body {
+}
+footer ul li {
+margin:0;
+padding:0;
+list-style:none;
+
+
+}
+footer ul {
+list-style:none;
+}
+footer {
+color:white;
+border-radius:0 0 5% 5%;
+text-align:center;
+background-color:black;
+
+}
+.footerfontcolor {
+margin:0;
+float:left;
+width:100%;
+color:#e9dbdb;
+margin-top:2%;
+text-align:center;
+
+}
+footer p:hover {
+color:#b09e9e;
+}
+footer a{
+    
+}
+._style_1YVNdK {
+    display: inline-block !important;
+    line-height: 1em !important;
+    width:15%;
+}
+
+.publicity {
+    border-bottom:1px solid #b09e9e;
+    border-top:1px solid #b09e9e;
+    margin:1%;
+    padding:1%;
+}

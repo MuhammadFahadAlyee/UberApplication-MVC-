@@ -1,0 +1,157 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<body>
+    
+    <style>
+        #Name{
+    color:black;
+    font-weight:normal;
+    font-family:Calibri;
+    font-size:30px; 
+    width:100%;
+   }
+#EmailAddress{
+    color:black;
+    font-weight:normal;
+    font-family:Calibri; 
+    font-size:30px;
+}
+#LastName{
+    color:black; 
+    font-weight:normal; 
+    font-family:Calibri; 
+    font-size:30px;
+}
+#WriteMessage{
+    color:black; 
+    font-weight:normal; 
+    font-family:Calibri; 
+    font-size:30px;
+    height:100px;
+    
+}
+#Phone{
+    color:black; 
+    font-weight:normal; 
+    font-family:Calibri; 
+    font-size:30px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 15px 50px;
+  width:90%; 
+}   
+#random{
+    
+    width:540px;
+    height:50px;
+    
+}
+#random1{
+    width:100%;
+    height:auto;
+    height:94px;
+}
+#toplebel{
+    padding-left:5.5%;
+    font-family:Arial;
+    font-size:38px;
+    font-weight:bold;
+}
+#Send{
+    font-family:'Franklin Gothic';
+    font-size:x-large;
+    color:#fff;
+    font-weight:bold;
+    background-color:#000;
+    width:50%;
+    border-radius:10px 10px;
+    height:50px;
+}
+#Send1{
+    font-family:'Franklin Gothic';
+    font-size:x-large;
+    color:#fff;
+    font-weight:bold;
+    background-color:#000;
+    width:50%;
+    border-radius:10px 10px;
+    height:70px;
+}
+    </style>
+
+    <br /><br />
+
+    <div id="toplebel">
+        <label>Leave A Message</label>
+    </div>
+    <center>
+        <table border="0">
+            <tr>
+                <td>
+                    <div id="Name">
+                        <input type="text" placeholder="Name" name="text" id="random" />
+                    </div>
+                </td>
+                <td>
+                    <div id="EmailAddress">
+                        <input type="text" placeholder="Email Adresss" id="random" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="LastName">
+                        <input type="text" placeholder="LastName" id="random" />
+                    </div>
+                </td>
+                <td>
+                    <div id="Phone">
+                        <input type="text" placeholder="Phone" id="random" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="WriteMessage">
+                        <textarea placeholder="Write Messages " id="random1"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div>
+                        <button id="Send">SEND</button><br /><br />
+
+                        <button type="button"
+                                onclick="document.getElementById('demo').innerHTML = Date()" id="Send1">
+                            Click Here to display Date and Time.
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </center>
+    
+    
+
+    <p id="demo"></p>
+
+  <br />
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d803.9238346052458!2d67.08526683282342!3d24.915507106198422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f31d016358b%3A0x45aae6b24dbaba53!2sPlot+B+168%2C+Block+13D-1+Block+13+D+1+Gulshan-e-Iqbal%2C+Karachi%2C+Karachi+City%2C+Sindh%2C+Pakistan!5e1!3m2!1sen!2s!4v1533113342539" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <br />
+    <br />
+
+</body>
+</html>
+
+

@@ -1,0 +1,285 @@
+﻿@model IEnumerable<FinalMVCproject.Models.tblUserProfile>
+    
+       @using FinalMVCproject.Models; 
+                                   
+
+     @{ 
+         ViewBag.Title = "Home Page";
+     }
+<link href="~/Content/Home.css" rel="stylesheet" />
+<div class="row">
+    <div class="col-md-12">
+        <div class="marketing-site-hero image-banner img-responsive" style="background: url('../../images/usama2.jpg'); background-attachment: fixed; background-repeat:no-repeat; width:100%;">
+            <div class="container">
+                <div class="row row-flex-mid">
+                    <div class="marketing-site-hero-content columns small-12 medium-12 large-7 image-banner-content">
+                        <div class="col-md-6">
+                            <h1 style="font-weight:bold;">Focus on where you’re headed. We’ll focus on getting you there.</h1>
+                            <br /><br />
+                            <p class="description hide-for-small-only" style="font-weight:bold">Whether you’re a Customer getting from A to B, or a Captain getting behind the wheel, our mission is to move you towards better living.</p>
+                            <br /> <br />
+                            <div style="margin-top:3%;">
+                                <button class="round btn btn-transparent btn-primary">Become a Captain</button>
+                                <button class="round btn btn-transparent btn-default">Sign up to ride</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 panel">
+        <div class="panel-heading">
+            <h3 class="text-info panel  " style="font-weight:bold">Our Most Popular Destination</h3>
+        </div>
+            <div class="panel-body">
+            @*<div class="col-md-6 panel panel-default" style="overflow:hidden">
+                <div class="col-md-12 panel-body" >
+                    <div class="col-md-4 " style="border:1px solid black; height:150px;">
+
+                        <img src="~/images/dubai.jpg" class="" style="width:100%" />
+                    </div>
+                    <div class="col-md-8 " style="border:1px solid black;height:150px; overflow:hidden">
+                        <div class="row panel panel-heading">
+                            <h4 class="" style="margin-top:0;">  Dubai</h4>
+                            <img src="https://cdn2.rcstatic.com/images/flags/ae-small.gif" width="16" height="16" alt="AE" />
+                            <span class="">U.A.E</span>
+                        </div>
+                        <div class="row panel-body">
+                         </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="col-md-5 panel panel-default" style="margin-left:1%;">
+                    <div class="panel-body">
+                        <div class="col-md-4 " style="border:1px solid black; height:150px;">
+
+                        </div>
+                        <div class="col-md-8 " style="border:1px solid black;height:150px;">
+                            <div class="row panel panel-heading">
+                                <h4 class="" style="margin-top:0;">  Dubai</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/ae-small.gif" width="16" height="16" alt="AE" />
+                                <span class="">U.A.E</span>
+                            </div>
+                            <div class="row panel-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 panel panel-default">
+                    <div class="col-md-12 panel-body">
+                        <div class="col-md-4 " style="border:1px solid black; height:150px;">
+
+                        </div>
+                        <div class="col-md-8 " style="border:1px solid black;height:150px;">
+                            <div class="row panel panel-heading">
+                                <h4 class="" style="margin-top:0;">  Dubai</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/ae-small.gif" width="16" height="16" alt="AE" />
+                                <span class="">U.A.E</span>
+                            </div>
+                            <div class="row panel-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 panel panel-default" style="margin-left:1%;">
+                    <div class="panel-body">
+                        <div class="col-md-4 " style="border:1px solid black; height:150px;">
+
+                        </div>
+                        <div class="col-md-8 " style="border:1px solid black;height:150px;">
+                            <div class="row panel panel-heading">
+                                <h4 class="" style="margin-top:0;">  Dubai</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/ae-small.gif" width="16" height="16" alt="AE" />
+                                <span class="">U.A.E</span>
+                            </div>
+                            <div class="row panel-body">
+                            </div>
+                        </div>
+                    </div>
+
+
+                @*==================*@
+
+                <div class="col-md-6 panel panel-default">
+                    <div class="col-md-12 panel-body" style="width:100%">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/dubai.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row col-md-12 panel-info panel-heading" style="margin:0;">
+                                <h4 class="" style="margin-top:0;">  Dubai</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/ae-small.gif" width="16" height="16" alt="AE" />
+                                <span class="">U.A.E</span>
+                            </div>
+                            <div class="row panel-body" style="margin-left:1%;">
+                                <p>Mr A.Rizg said</p>
+                                <p>"Excellent experiance"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 panel panel-default" style="margin-left:1%;">
+                    <div class="panel-body col-md-12" style="width:100%;">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/malaysia.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row panel-info panel-heading" style="margin:0;">
+                                <h4 class="" style="margin-top:0;">  Kuala Lumpur</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/my-small.gif" width="16" height="16" alt="MY">
+                                <span class="">Malaysia</span>
+                            </div>
+                            <div class="row panel-body"style="margin-left:1%;">
+                                <p>Mr I. Wong Said</p>
+                                <p>"Great price,great reliability"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 panel panel-default">
+                    <div class="col-md-12 panel-body" style="width:100%">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/Thailand.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row col-md-12 panel-info panel-heading" style="margin:0;">
+                                <h4 class="" style="margin-top:0;">  bangkok</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/th-small.gif" width="16" height="16" alt="TH">
+                                <span class=""> Thailand</span>
+                            </div>
+                            <div class="row panel-body"style="margin-left:1%;">
+                                <p>Mr S. Burcham said</p>
+                                <p>"Excellent service all round"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 panel panel-default" style="margin-left:1%;">
+                    <div class="panel-body col-md-12" style="width:100%;">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/london.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row  panel-heading panel-info" style="margin:0;">
+                                <h4 class="" style="margin-top:0;">  London </h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/gb-small.gif" width="16" height="16" alt="GB">
+                                <span class="">U.A.E</span>
+                            </div>
+                            <div class="row panel-body"style="margin-left:1%;">
+                                <p> Dr R. Hinchcliffe said</p>
+                                <p>"good hassle  free experience"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 panel panel-default">
+                    <div class="col-md-12 panel-body" style="width:100%">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/portugal.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row col-md-12 panel-info panel-heading" style="margin:0;">
+                                <h4 class="" style="margin-top:0;">  Lisbon</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/pt-small.gif" width="16" height="16" alt="PT">
+                                <span class="">Portugal</span>
+                            </div>
+                            <div class="row panel-body" style="margin-left:1%;">
+                                <p>Mr A.Rizg said</p>
+                                <p>"Excellent experiance"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-5 panel panel-default" style="margin-left:1%;">
+                    <div class="panel-body col-md-12" style="width:100%;">
+                        <div class="" style="height:150px;width:30%;float:left;">
+                            <img src="~/images/france.jpg" style="width:100%;height:100%;" />
+                        </div>
+                        <div class="" style="height:150px;width:70%;float:left;">
+                            <div class="row panel-info panel-heading" style="margin:0;">
+                                <h4 class="" style="margin-top:0;"> Massy</h4>
+                                <img src="https://cdn2.rcstatic.com/images/flags/fr-small.gif" width="16" height="16" alt="FR">
+                                <span class="">France</span>
+                            </div>
+                            <div class="row panel-body" style="margin-left:1%;">
+                                <p>Mr I. Wong Said</p>
+                                <p>"Great price,great reliability"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    </div>
+        </div>
+
+</div>
+
+
+<div class="panel panel-default" style="margin-top:0;">
+    <h3 class="text-info panel-default " style="font-weight:bold">Frequently Asked Questions</h3>
+    @*<div class="panel-body">*@
+
+        <div class="panel-info panel-heading">
+            <h4 class="text-info  " style="font-weight:bold">What do I need to rent a car?</h4>
+            <dd id="faq-answer-0" style="display: block;">
+                To book your car, all you need is a credit or debit card. When you pick the car up, you’ll need:<ul>
+                    <li>Your voucher / eVoucher, to show that you’ve paid for the car.</li>
+                    <li>The main driver’s credit / debit card, with enough available funds for the car’s deposit.</li>
+                    <li>Each driver’s full, valid driving licence, which they’ve held for at least 12 months (often 24).</li>
+                    <li>Your passport and any other ID the car rental company needs to see.</li>
+                </ul>
+                Different car rental companies have different requirements, so please make sure you check the car’s terms and conditions as well.
+            </dd>
+         </div>
+   @*   </div>*@
+    <div class="panel-info panel-heading">
+        <h4 class="text-info  " style="font-weight:bold">How old do I have to be to rent a car?</h4>
+        <dd id="faq-answer-1" style="display: block;">
+
+            For most car rental companies, the age requirement is between 21 and 70 years old. If you’re under 25 or over 70, you might have to pay an additional fee.
+        </dd>
+    </div>
+    <div class="panel-info panel-heading">
+        <h4 class="text-info  " style="font-weight:bold">Can I book a rental car for someone else?</h4>
+        <dd id="faq-answer-2" style="display: block;">
+
+            Yes, as long as they meet these requirements. Just fill in their details while you’re making the reservation.
+        </dd>
+    </div>
+    <div class="panel-info panel-heading">
+        <h4 class="text-info  " style="font-weight:bold">How do I find the cheapest car rental deal?</h4>
+        <dd id="faq-answer-3" style="display: block;">
+
+            We work with all the major international car rental brands (and lots of smaller local companies) to bring you a huge choice of cars at the very best prices. That’s how we can find you cheap car rental deals at over 53,000 locations worldwide. To compare prices and find your ideal car at an unbeatable price, just use our search form.
+        </dd>
+    </div>
+    <div class="panel-info panel-heading">
+        <h4 class="text-info  " style="font-weight:bold">Are all fees included in the rental price?</h4>
+        <dd id="faq-answer-5" style="display: block;">
+
+            The vast majority of our rentals include Theft Protection, Collision Damage Waiver (CDW), local taxes, airport surcharges and any road fees. You’ll pay for any ‘extras’ when you pick your car up, along with any young driver, additional   driver or one-way fees – but we’ll explain any additional costs before you book your car (and taking your own child seats or GPS can be an easy way to reduce your costs). For more details on what’s included, just check the Ts&amp;Cs of any car you’re looking at.
+        </dd>
+    </div>
+
+</div>
+

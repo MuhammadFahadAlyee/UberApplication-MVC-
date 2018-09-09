@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/master.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+    <style>
+
+        .navbar-inverse {
+            background-color:teal;
+            border-color: #080808;
+            font-size: 22px;
+            font-family: Arial;
+        }
+
+    </style>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("UBER", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="" style="background-color:black;width:100%;color:white;float:left">
+            <div class="col-md-12">
+                <div class="row" style="margin-top:5%;">
+            <div class="col-md-3"style="margin:0;">
+               
+                  <div style="margin:0;float:left;width:100%;color:#e9dbdb;margin-top:2%;"><i class="glyphicon glyphicon-search"></i> Search...</div><br />
+                  <div style="margin:0;float:left;width:100%;color:#e9dbdb;margin-top:2%;"><i class="glyphicon glyphicon-random" ></i> English</div><br />
+                  <div style="margin:0;float:left;width:100%;color:#e9dbdb;margin-top:2%;"><b>?</b> Help </div>
+                
+
+            </div>
+            <div class="col-md-3">
+                <b style="margin-bottom:1%;">About</b><br />
+                <p class="footerfontcolor">@Html.ActionLink("How Uber Work", "About")</p><br />
+                <p class="footerfontcolor">@Html.ActionLink("Blog", "https://www.uber.com/en-PK/blog/")</p><br />
+                <p class="footerfontcolor">@Html.ActionLink("Countries", "Countries")</p>              
+
+            </div>
+            <div class="col-md-3">
+                <b style="margin-bottom:1%;">Ride</b><br />
+
+                <p class="footerfontcolor">@Html.ActionLink("Sign up to Ride", "registrationform")</p><br />
+                
+            </div>
+            <div class="col-md-3">
+                <b>Driver</b>
+                <p class="footerfontcolor">@Html.ActionLink("Sign up to Drive", "registrationform")</p><br />
+                <p class="footerfontcolor">@Html.ActionLink("Uber vs Driving Jobs", "Taxi_Vs_UberDriver")</p><br />
+                <p class="footerfontcolor">@Html.ActionLink("Requirements", "Requirements")</p><br />
+            
+            
+               </div>
+                </div>
+                <div class="publicity">
+                    <div style="width:100%"><a class="dotcom-footer-app-link-ios _style_1YVNdK" href="https://7336.tlnk.io/serve?action=click&amp;publisher_id=200585&amp;site_id=17688&amp;my_keyword=app_control_ios" title="Available on the App Store" data-reactid="732">
+                        <img alt="Available on the App Store" class="_style_1Vwjwb" src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-apple-f1f919205b.svg" data-reactid="733">
+                    </a>
+                    <a class="dotcom-footer-app-link-android _style_1YVNdK" href="https://7336.tlnk.io/serve?action=click&amp;publisher_id=200585&amp;site_id=26744&amp;my_keyword=app_control_android" title="Get it on Google Play" data-reactid="734">
+                        <img alt="Get it on Google Play" class="_style_1Vwjwb" src="https://d1a3f4spazzrp4.cloudfront.net/uber-com/1.3.8/d1a3f4spazzrp4.cloudfront.net/illustrations/app-store-google-4d63c31a3e.svg" data-reactid="735">
+                    </a>
+                    </div>
+
+                    <div>
+                     <b>Follow Us</b>   <a class="socialmedia" href="https://www.facebook.com/"style="color:white;background-color:white;"><i class="fa fa-facebook-official" style="font-size:24px;color:re;background-color:white;"></i></a>
+
+                    </div>
+
+                </div>
+
+            <div style="float:right;">@DateTime.Now.Year All copyright Reserved</div> 
+                </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
